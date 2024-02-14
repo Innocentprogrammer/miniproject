@@ -1,0 +1,46 @@
+<!-- index.html (Login Page) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="f jcb aci nav">
+        <div>
+            <h1 class="h1">ERP for Project Distribution</h1>
+        </div>
+	
+        <div>
+            <!-- <button onclick="document.getElementById('id01').style.display='block',document.getElementById('id02').style.display='none'" class="Lbtn">SignUp</button> -->
+            <button onclick="document.getElementById('container').style.display='block',document.getElementById('id01').style.display='none'" class="Sbtn">Login</button>
+        </div>
+    </nav>
+  <div class="contain" id="container">
+    <span>
+        <center><img src="img1.png" height="100px" width="100px"></center>
+    </span>
+    <span>
+        <center>
+            <select>
+                <option value="Select">Select</option>
+                <option value="Student">Student</option>
+                <option value="Guide">Guide</option>
+            </select>
+        </center>
+    </span><br>
+    <form id="loginForm">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      <button type="button" onclick="login()">Login</button>
+      <button type="button" class="can" onclick="document.getElementById('container').style.display='none'" class="cancelbtn">Cancel</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
